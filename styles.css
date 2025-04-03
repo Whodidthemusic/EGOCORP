@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  background: black;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  text-align: center;
+  animation: fadeIn 3s ease-in;
+}
+
+.logo {
+  width: 180px;
+  margin-bottom: 40px;
+  filter: brightness(1.2) contrast(1.1);
+}
+
+#countdown {
+  font-size: 2.5rem;
+  letter-spacing: 0.2em;
+  color: #00fff7;
+  text-shadow: 0 0 15px #00fff7;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
